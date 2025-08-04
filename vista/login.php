@@ -15,9 +15,7 @@
       <div class="brand-overlay">
         <div class="brand-content">
           <div class="company-logo">
-            <div class="logo-circle">
-              <i class="fas fa-shield-alt"></i>
-            </div>
+            <img src="assets/img/logo.png" alt="IMPHAMA" class="logo-image">
             <h1 class="company-name">IMPHAMA</h1>
             <p class="company-tagline">Seguridad Industrial</p>
           </div>

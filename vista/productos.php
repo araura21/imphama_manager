@@ -15,9 +15,7 @@
     <header class="products-header">
       <div class="header-content">
         <div class="logo-section">
-          <div class="logo-icon">
-            <i class="fas fa-shield-alt"></i>
-          </div>
+          <img src="assets/img/logo.png" alt="IMPHAMA" class="company-logo">
           <div class="logo-text">
             <h1 class="company-name">IMPHAMA</h1>
             <p class="company-tagline">Seguridad Industrial</p>
@@ -134,9 +132,9 @@
               <div class="product-image">
                 <img src="assets/img/productos/pro1.png" alt="Mascarilla Respiratoria N95">
                 <div class="product-overlay">
-                  <button class="product-btn">
-                    <i class="fas fa-eye"></i>
-                    Ver Detalles
+                  <button class="product-btn" onclick="goToComparator('Mascarilla Respiratoria N95', 'pro1.png', 'proteccion-respiratoria')">
+                    <i class="fas fa-balance-scale"></i>
+                    Comparar Proveedores
                   </button>
                 </div>
               </div>
@@ -161,9 +159,9 @@
               <div class="product-image">
                 <img src="assets/img/productos/pro2.jpg" alt="Respirador Media Cara">
                 <div class="product-overlay">
-                  <button class="product-btn">
-                    <i class="fas fa-eye"></i>
-                    Ver Detalles
+                  <button class="product-btn" onclick="goToComparator('Respirador Media Cara', 'pro2.jpg', 'proteccion-respiratoria')">
+                    <i class="fas fa-balance-scale"></i>
+                    Comparar Proveedores
                   </button>
                 </div>
               </div>
@@ -188,9 +186,9 @@
               <div class="product-image">
                 <img src="assets/img/productos/pro3.jpg" alt="Mascarilla Desechable">
                 <div class="product-overlay">
-                  <button class="product-btn">
-                    <i class="fas fa-eye"></i>
-                    Ver Detalles
+                  <button class="product-btn" onclick="goToComparator('Mascarilla Desechable', 'pro3.jpg', 'proteccion-respiratoria')">
+                    <i class="fas fa-balance-scale"></i>
+                    Comparar Proveedores
                   </button>
                 </div>
               </div>
@@ -215,9 +213,9 @@
               <div class="product-image">
                 <img src="assets/img/productos/pro4.jpg" alt="Respirador Cara Completa">
                 <div class="product-overlay">
-                  <button class="product-btn">
-                    <i class="fas fa-eye"></i>
-                    Ver Detalles
+                  <button class="product-btn" onclick="goToComparator('Respirador Cara Completa', 'pro4.jpg', 'proteccion-respiratoria')">
+                    <i class="fas fa-balance-scale"></i>
+                    Comparar Proveedores
                   </button>
                 </div>
               </div>
@@ -242,9 +240,9 @@
               <div class="product-image">
                 <img src="assets/img/productos/pro5.jpg" alt="Filtros P100">
                 <div class="product-overlay">
-                  <button class="product-btn">
-                    <i class="fas fa-eye"></i>
-                    Ver Detalles
+                  <button class="product-btn" onclick="goToComparator('Filtros P100', 'pro5.jpg', 'proteccion-respiratoria')">
+                    <i class="fas fa-balance-scale"></i>
+                    Comparar Proveedores
                   </button>
                 </div>
               </div>
@@ -269,9 +267,9 @@
               <div class="product-image">
                 <img src="assets/img/productos/pro6.png" alt="Equipo Autónomo">
                 <div class="product-overlay">
-                  <button class="product-btn">
-                    <i class="fas fa-eye"></i>
-                    Ver Detalles
+                  <button class="product-btn" onclick="goToComparator('Equipo Autónomo', 'pro6.png', 'proteccion-respiratoria')">
+                    <i class="fas fa-balance-scale"></i>
+                    Comparar Proveedores
                   </button>
                 </div>
               </div>
@@ -640,9 +638,9 @@
           <div class="product-image">
             <img src="assets/img/productos/${product.image}" alt="${product.name}">
             <div class="product-overlay">
-              <button class="product-btn">
-                <i class="fas fa-eye"></i>
-                Ver Detalles
+              <button class="product-btn" onclick="goToComparator('${product.name}', '${product.image}', '${category}')">
+                <i class="fas fa-balance-scale"></i>
+                Comparar Proveedores
               </button>
             </div>
           </div>
@@ -660,6 +658,16 @@
           </div>
         </div>
       `).join('');
+    }
+
+    // Función para ir al comparador
+    function goToComparator(productName, productImage, category) {
+      const params = new URLSearchParams({
+        product: productName,
+        image: productImage,
+        category: category
+      });
+      window.location.href = `comparador.php?${params.toString()}`;
     }
 
     // Event listeners

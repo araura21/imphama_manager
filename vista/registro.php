@@ -13,9 +13,7 @@
     <!-- Header con logo -->
     <div class="register-header">
       <div class="header-logo">
-        <div class="logo-icon">
-          <i class="fas fa-shield-alt"></i>
-        </div>
+        <img src="assets/img/logo.png" alt="IMPHAMA" class="company-logo">
         <h1 class="header-title">IMPHAMA</h1>
         <p class="header-subtitle">Seguridad Industrial</p>
       </div>
