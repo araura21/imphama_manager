@@ -304,7 +304,7 @@
         description: 'Equipos de protección para las vías respiratorias en entornos industriales',
         products: [
           {
-            image: 'pro1.png',
+            image: 'respiratoria/1.jpg',
             name: 'Mascarilla Respiratoria N95',
             description: 'Protección contra partículas y aerosoles',
             specs: [
@@ -313,7 +313,7 @@
             ]
           },
           {
-            image: 'pro2.jpg',
+            image: 'respiratoria/2.jpg',
             name: 'Respirador Media Cara',
             description: 'Con filtros intercambiables P100',
             specs: [
@@ -322,7 +322,7 @@
             ]
           },
           {
-            image: 'pro3.jpg',
+            image: 'respiratoria/3.jpg',
             name: 'Mascarilla Desechable',
             description: 'Protección básica contra polvo',
             specs: [
@@ -331,7 +331,7 @@
             ]
           },
           {
-            image: 'pro4.jpg',
+            image: 'respiratoria/4.jpg',
             name: 'Respirador Cara Completa',
             description: 'Máxima protección respiratoria y visual',
             specs: [
@@ -340,7 +340,7 @@
             ]
           },
           {
-            image: 'pro5.jpg',
+            image: 'respiratoria/5.jpg',
             name: 'Filtros P100',
             description: 'Filtros de alta eficiencia',
             specs: [
@@ -349,12 +349,48 @@
             ]
           },
           {
-            image: 'pro6.png',
+            image: 'respiratoria/6.jpg',
             name: 'Equipo Autónomo',
             description: 'Respiración autónoma para espacios confinados',
             specs: [
               { icon: 'fas fa-air-freshener', text: 'Aire Limpio' },
               { icon: 'fas fa-clock', text: '4 Horas' }
+            ]
+          },
+          {
+            image: 'respiratoria/7.jpg',
+            name: 'Mascarilla FFP2',
+            description: 'Protección europea estándar',
+            specs: [
+              { icon: 'fas fa-certificate', text: 'FFP2' },
+              { icon: 'fas fa-leaf', text: 'Cómoda' }
+            ]
+          },
+          {
+            image: 'respiratoria/8.jpg',
+            name: 'Respirador Elastomérico',
+            description: 'Reutilizable con filtros intercambiables',
+            specs: [
+              { icon: 'fas fa-recycle', text: 'Reutilizable' },
+              { icon: 'fas fa-wrench', text: 'Mantenimiento' }
+            ]
+          },
+          {
+            image: 'respiratoria/9.jpg',
+            name: 'Purificador de Aire',
+            description: 'Sistema motorizado de purificación',
+            specs: [
+              { icon: 'fas fa-fan', text: 'Motorizado' },
+              { icon: 'fas fa-battery-full', text: 'Batería' }
+            ]
+          },
+          {
+            image: 'respiratoria/10.jpg',
+            name: 'Mascarilla Quirúrgica',
+            description: 'Protección médica desechable',
+            specs: [
+              { icon: 'fas fa-hospital', text: 'Médica' },
+              { icon: 'fas fa-trash', text: 'Desechable' }
             ]
           }
         ]
@@ -365,7 +401,7 @@
         description: 'Gafas y caretas de protección para los ojos',
         products: [
           {
-            image: 'pro7.png',
+            image: 'visual/1.jpg',
             name: 'Gafas de Seguridad',
             description: 'Protección contra impactos y salpicaduras',
             specs: [
@@ -374,7 +410,7 @@
             ]
           },
           {
-            image: 'pro8.png',
+            image: 'visual/2.jpg',
             name: 'Careta Facial',
             description: 'Protección completa del rostro',
             specs: [
@@ -383,7 +419,7 @@
             ]
           },
           {
-            image: 'pro1.png',
+            image: 'visual/3.jpg',
             name: 'Gafas Anti-químicos',
             description: 'Resistente a químicos corrosivos',
             specs: [
@@ -392,12 +428,66 @@
             ]
           },
           {
-            image: 'pro2.jpg',
+            image: 'visual/4.jpg',
             name: 'Pantalla Soldadura',
             description: 'Protección UV para soldadores',
             specs: [
               { icon: 'fas fa-fire', text: 'Anti-UV' },
               { icon: 'fas fa-tools', text: 'Para soldadura' }
+            ]
+          },
+          {
+            image: 'visual/5.jpg',
+            name: 'Gafas Láser',
+            description: 'Protección contra radiación láser',
+            specs: [
+              { icon: 'fas fa-laser', text: 'Anti-láser' },
+              { icon: 'fas fa-wave-square', text: 'Filtro específico' }
+            ]
+          },
+          {
+            image: 'visual/6.jpg',
+            name: 'Gogles Deportivos',
+            description: 'Para actividades deportivas',
+            specs: [
+              { icon: 'fas fa-running', text: 'Deportivo' },
+              { icon: 'fas fa-wind', text: 'Anti-viento' }
+            ]
+          },
+          {
+            image: 'visual/7.jpg',
+            name: 'Visor Protector',
+            description: 'Visor transparente abatible',
+            specs: [
+              { icon: 'fas fa-arrows-alt-v', text: 'Abatible' },
+              { icon: 'fas fa-eye', text: 'Transparente' }
+            ]
+          },
+          {
+            image: 'visual/8.jpg',
+            name: 'Gafas Graduadas',
+            description: 'Protección con graduación',
+            specs: [
+              { icon: 'fas fa-glasses', text: 'Graduadas' },
+              { icon: 'fas fa-user-md', text: 'Personalizable' }
+            ]
+          },
+          {
+            image: 'visual/9.jpg',
+            name: 'Protector Facial',
+            description: 'Escudo facial completo',
+            specs: [
+              { icon: 'fas fa-shield', text: 'Escudo' },
+              { icon: 'fas fa-head-side-mask', text: 'Facial' }
+            ]
+          },
+          {
+            image: 'visual/10.jpg',
+            name: 'Gafas Polarizadas',
+            description: 'Con filtro polarizado',
+            specs: [
+              { icon: 'fas fa-sun', text: 'Polarizadas' },
+              { icon: 'fas fa-adjust', text: 'Anti-reflejo' }
             ]
           }
         ]
@@ -408,7 +498,7 @@
         description: 'Equipos para proteger el sistema auditivo',
         products: [
           {
-            image: 'pro3.jpg',
+            image: 'auditiva/1.jpg',
             name: 'Tapones Auditivos',
             description: 'Protección básica contra ruido',
             specs: [
@@ -417,7 +507,7 @@
             ]
           },
           {
-            image: 'pro4.jpg',
+            image: 'auditiva/2.jpg',
             name: 'Orejeras Industriales',
             description: 'Máxima reducción de ruido',
             specs: [
@@ -426,182 +516,560 @@
             ]
           },
           {
-            image: 'pro5.jpg',
+            image: 'auditiva/3.jpg',
             name: 'Protección Electrónica',
             description: 'Con amplificación selectiva',
             specs: [
               { icon: 'fas fa-microchip', text: 'Electrónica' },
               { icon: 'fas fa-volume-up', text: 'Amplificación' }
             ]
+          },
+          {
+            image: 'auditiva/4.jpg',
+            name: 'Tapones Moldeables',
+            description: 'Se adaptan al oído',
+            specs: [
+              { icon: 'fas fa-hand-holding', text: 'Moldeables' },
+              { icon: 'fas fa-user', text: 'Personalizados' }
+            ]
+          },
+          {
+            image: 'auditiva/5.jpg',
+            name: 'Orejeras con Radio',
+            description: 'Protección con comunicación',
+            specs: [
+              { icon: 'fas fa-radio', text: 'Radio FM' },
+              { icon: 'fas fa-bluetooth', text: 'Bluetooth' }
+            ]
+          },
+          {
+            image: 'auditiva/6.jpg',
+            name: 'Bandas Auditivas',
+            description: 'Protección ligera',
+            specs: [
+              { icon: 'fas fa-feather', text: 'Ligeras' },
+              { icon: 'fas fa-sync', text: 'Reutilizables' }
+            ]
+          },
+          {
+            image: 'auditiva/7.jpg',
+            name: 'Tapones con Cordón',
+            description: 'Con cuerda de seguridad',
+            specs: [
+              { icon: 'fas fa-link', text: 'Con cordón' },
+              { icon: 'fas fa-shield', text: 'No se pierden' }
+            ]
+          },
+          {
+            image: 'auditiva/8.jpg',
+            name: 'Orejeras Plegables',
+            description: 'Compactas y portátiles',
+            specs: [
+              { icon: 'fas fa-compress', text: 'Plegables' },
+              { icon: 'fas fa-suitcase', text: 'Portátiles' }
+            ]
+          },
+          {
+            image: 'auditiva/9.jpg',
+            name: 'Protección Premium',
+            description: 'Máxima comodidad y protección',
+            specs: [
+              { icon: 'fas fa-star', text: 'Premium' },
+              { icon: 'fas fa-gem', text: 'Máxima calidad' }
+            ]
+          },
+          {
+            image: 'auditiva/10.jpg',
+            name: 'Kit Completo',
+            description: 'Varios tipos de protección',
+            specs: [
+              { icon: 'fas fa-box', text: 'Kit completo' },
+              { icon: 'fas fa-list', text: 'Variedad' }
+            ]
           }
         ]
       },
-      'proteccion-corporal': {
+            'proteccion-corporal': {
         title: 'Protección Corporal',
-        icon: 'fas fa-vest',
-        description: 'Ropa y equipos de protección para el cuerpo',
+        icon: 'fas fa-shield-alt',
+        description: 'Ropa y equipos para protección del cuerpo',
         products: [
           {
-            image: 'pro6.png',
+            image: 'corporal/1.jpg',
+            name: 'Traje Tyvek',
+            description: 'Protección química completa',
+            specs: [
+              { icon: 'fas fa-flask', text: 'Anti-químico' },
+              { icon: 'fas fa-shield', text: 'Completo' }
+            ]
+          },
+          {
+            image: 'corporal/2.jpg',
             name: 'Chaleco Reflectivo',
-            description: 'Alta visibilidad en ambientes industriales',
+            description: 'Alta visibilidad',
             specs: [
-              { icon: 'fas fa-eye', text: 'Alta Visibilidad' },
-              { icon: 'fas fa-moon', text: 'Día y Noche' }
+              { icon: 'fas fa-eye', text: 'Alta visibilidad' },
+              { icon: 'fas fa-sun', text: 'Reflectivo' }
             ]
           },
           {
-            image: 'pro7.png',
-            name: 'Overol Químico',
-            description: 'Protección contra químicos peligrosos',
+            image: 'corporal/3.jpg',
+            name: 'Overol Industrial',
+            description: 'Protección general',
             specs: [
-              { icon: 'fas fa-flask', text: 'Anti-químicos' },
-              { icon: 'fas fa-shield-alt', text: 'Cuerpo Completo' }
+              { icon: 'fas fa-cog', text: 'Industrial' },
+              { icon: 'fas fa-user-shield', text: 'Resistente' }
             ]
           },
           {
-            image: 'pro8.png',
-            name: 'Arnés de Seguridad',
-            description: 'Para trabajos en altura',
+            image: 'corporal/4.jpg',
+            name: 'Mandil Químico',
+            description: 'Protección frontal',
             specs: [
-              { icon: 'fas fa-anchor', text: 'Anticaídas' },
-              { icon: 'fas fa-mountain', text: 'Trabajos en Altura' }
+              { icon: 'fas fa-vial', text: 'Químico' },
+              { icon: 'fas fa-hand-paper', text: 'Impermeable' }
+            ]
+          },
+          {
+            image: 'corporal/5.jpg',
+            name: 'Traje Anti-llama',
+            description: 'Resistente al fuego',
+            specs: [
+              { icon: 'fas fa-fire', text: 'Anti-llama' },
+              { icon: 'fas fa-thermometer', text: 'Resistente' }
+            ]
+          },
+          {
+            image: 'corporal/6.jpg',
+            name: 'Bata de Laboratorio',
+            description: 'Protección básica',
+            specs: [
+              { icon: 'fas fa-microscope', text: 'Laboratorio' },
+              { icon: 'fas fa-clean', text: 'Higiénica' }
+            ]
+          },
+          {
+            image: 'corporal/7.jpg',
+            name: 'Traje Impermeable',
+            description: 'Protección contra líquidos',
+            specs: [
+              { icon: 'fas fa-tint', text: 'Impermeable' },
+              { icon: 'fas fa-water', text: 'Anti-líquidos' }
+            ]
+          },
+          {
+            image: 'corporal/8.jpg',
+            name: 'Chaleco Térmico',
+            description: 'Protección contra calor',
+            specs: [
+              { icon: 'fas fa-temperature-high', text: 'Térmico' },
+              { icon: 'fas fa-snowflake', text: 'Aislante' }
+            ]
+          },
+          {
+            image: 'corporal/9.jpg',
+            name: 'Traje Desechable',
+            description: 'Un solo uso',
+            specs: [
+              { icon: 'fas fa-recycle', text: 'Desechable' },
+              { icon: 'fas fa-clock', text: 'Un uso' }
+            ]
+          },
+          {
+            image: 'corporal/10.jpg',
+            name: 'Kit Protección',
+            description: 'Conjunto completo',
+            specs: [
+              { icon: 'fas fa-box-open', text: 'Kit completo' },
+              { icon: 'fas fa-check-double', text: 'Todo incluido' }
             ]
           }
         ]
       },
-      'proteccion-manos': {
+            'proteccion-manos': {
         title: 'Protección de Manos',
         icon: 'fas fa-hand-paper',
-        description: 'Guantes especializados para diferentes industrias',
+        description: 'Guantes especializados para diferentes trabajos',
         products: [
           {
-            image: 'pro1.png',
+            image: 'manos/1.jpg',
             name: 'Guantes Nitrilo',
-            description: 'Resistente a químicos y cortes',
+            description: 'Resistentes a químicos',
             specs: [
-              { icon: 'fas fa-cut', text: 'Anti-cortes' },
-              { icon: 'fas fa-flask', text: 'Anti-químicos' }
+              { icon: 'fas fa-flask', text: 'Anti-químico' },
+              { icon: 'fas fa-hand-holding', text: 'Flexible' }
             ]
           },
           {
-            image: 'pro2.jpg',
-            name: 'Guantes Soldadura',
-            description: 'Protección térmica para soldadores',
+            image: 'manos/2.jpg',
+            name: 'Guantes Látex',
+            description: 'Uso médico y general',
+            specs: [
+              { icon: 'fas fa-heartbeat', text: 'Médico' },
+              { icon: 'fas fa-hand', text: 'Sensibilidad' }
+            ]
+          },
+          {
+            image: 'manos/3.jpg',
+            name: 'Guantes Mecánicos',
+            description: 'Resistencia y agarre',
+            specs: [
+              { icon: 'fas fa-cog', text: 'Mecánico' },
+              { icon: 'fas fa-grip-horizontal', text: 'Agarre' }
+            ]
+          },
+          {
+            image: 'manos/4.jpg',
+            name: 'Guantes Corte',
+            description: 'Resistentes a cortes',
+            specs: [
+              { icon: 'fas fa-cut', text: 'Anti-corte' },
+              { icon: 'fas fa-shield', text: 'Nivel 5' }
+            ]
+          },
+          {
+            image: 'manos/5.jpg',
+            name: 'Guantes Térmicos',
+            description: 'Protección contra calor',
             specs: [
               { icon: 'fas fa-fire', text: 'Anti-calor' },
+              { icon: 'fas fa-thermometer', text: 'Térmicos' }
+            ]
+          },
+          {
+            image: 'manos/6.jpg',
+            name: 'Guantes Soldadura',
+            description: 'Para trabajos de soldadura',
+            specs: [
+              { icon: 'fas fa-tools', text: 'Soldadura' },
+              { icon: 'fas fa-fire-alt', text: 'Resistentes' }
+            ]
+          },
+          {
+            image: 'manos/7.jpg',
+            name: 'Guantes Vinilo',
+            description: 'Alternativa económica',
+            specs: [
+              { icon: 'fas fa-dollar-sign', text: 'Económicos' },
+              { icon: 'fas fa-hand-pointer', text: 'Desechables' }
+            ]
+          },
+          {
+            image: 'manos/8.jpg',
+            name: 'Guantes Criogénicos',
+            description: 'Para bajas temperaturas',
+            specs: [
+              { icon: 'fas fa-snowflake', text: 'Criogénicos' },
+              { icon: 'fas fa-temperature-low', text: 'Frío extremo' }
+            ]
+          },
+          {
+            image: 'manos/9.jpg',
+            name: 'Guantes Eléctricos',
+            description: 'Aislantes eléctricos',
+            specs: [
+              { icon: 'fas fa-bolt', text: 'Eléctrico' },
+              { icon: 'fas fa-plug', text: 'Aislante' }
+            ]
+          },
+          {
+            image: 'manos/10.jpg',
+            name: 'Kit Guantes',
+            description: 'Variedad de protección',
+            specs: [
+              { icon: 'fas fa-box', text: 'Variedad' },
+              { icon: 'fas fa-hands', text: 'Múltiples usos' }
+            ]
+          }
+        ]
+      },
+            'proteccion-pies': {
+        title: 'Protección de Pies',
+        icon: 'fas fa-shoe-prints',
+        description: 'Calzado de seguridad industrial',
+        products: [
+          {
+            image: 'pies/1.jpg',
+            name: 'Botas Punta Acero',
+            description: 'Máxima protección',
+            specs: [
+              { icon: 'fas fa-hard-hat', text: 'Punta acero' },
+              { icon: 'fas fa-shield', text: 'Resistente' }
+            ]
+          },
+          {
+            image: 'pies/2.jpg',
+            name: 'Zapatos Antideslizantes',
+            description: 'Suela anti-slip',
+            specs: [
+              { icon: 'fas fa-grip-lines', text: 'Anti-slip' },
+              { icon: 'fas fa-walking', text: 'Estabilidad' }
+            ]
+          },
+          {
+            image: 'pies/3.jpg',
+            name: 'Botas Dieléctricas',
+            description: 'Aislantes eléctricas',
+            specs: [
+              { icon: 'fas fa-bolt', text: 'Dieléctrico' },
+              { icon: 'fas fa-zap', text: 'Anti-eléctrico' }
+            ]
+          },
+          {
+            image: 'pies/4.jpg',
+            name: 'Botas Químicas',
+            description: 'Resistentes a químicos',
+            specs: [
+              { icon: 'fas fa-flask', text: 'Anti-químico' },
+              { icon: 'fas fa-droplet', text: 'Impermeable' }
+            ]
+          },
+          {
+            image: 'pies/5.jpg',
+            name: 'Calzado Ligero',
+            description: 'Cómodo y seguro',
+            specs: [
+              { icon: 'fas fa-feather', text: 'Ligero' },
+              { icon: 'fas fa-heart', text: 'Cómodo' }
+            ]
+          },
+          {
+            image: 'pies/6.jpg',
+            name: 'Botas Soldador',
+            description: 'Para trabajos de soldadura',
+            specs: [
+              { icon: 'fas fa-fire', text: 'Anti-chispa' },
               { icon: 'fas fa-tools', text: 'Soldadura' }
             ]
           },
           {
-            image: 'pro3.jpg',
-            name: 'Guantes Eléctricos',
-            description: 'Aislamiento eléctrico garantizado',
+            image: 'pies/7.jpg',
+            name: 'Zapatos Deportivos',
+            description: 'Estilo casual seguro',
             specs: [
-              { icon: 'fas fa-bolt', text: 'Aislante' },
-              { icon: 'fas fa-plug', text: 'Eléctrico' }
+              { icon: 'fas fa-running', text: 'Deportivo' },
+              { icon: 'fas fa-shield-alt', text: 'Seguridad' }
+            ]
+          },
+          {
+            image: 'pies/8.jpg',
+            name: 'Botas Altas',
+            description: 'Protección extendida',
+            specs: [
+              { icon: 'fas fa-arrow-up', text: 'Alta protección' },
+              { icon: 'fas fa-mountain', text: 'Resistente' }
+            ]
+          },
+          {
+            image: 'pies/9.jpg',
+            name: 'Calzado Térmico',
+            description: 'Para ambientes extremos',
+            specs: [
+              { icon: 'fas fa-thermometer', text: 'Térmico' },
+              { icon: 'fas fa-snowflake', text: 'Aislante' }
+            ]
+          },
+          {
+            image: 'pies/10.jpg',
+            name: 'Kit Calzado',
+            description: 'Opciones variadas',
+            specs: [
+              { icon: 'fas fa-box', text: 'Variedad' },
+              { icon: 'fas fa-check-circle', text: 'Completo' }
             ]
           }
         ]
       },
-      'proteccion-pies': {
-        title: 'Protección de Pies',
-        icon: 'fas fa-shoe-prints',
-        description: 'Calzado de seguridad para entornos industriales',
-        products: [
-          {
-            image: 'pro4.jpg',
-            name: 'Botas Puntera Acero',
-            description: 'Protección contra impactos pesados',
-            specs: [
-              { icon: 'fas fa-weight-hanging', text: 'Puntera Acero' },
-              { icon: 'fas fa-shield-alt', text: 'Anti-impacto' }
-            ]
-          },
-          {
-            image: 'pro5.jpg',
-            name: 'Botas Dieléctricas',
-            description: 'Aislamiento eléctrico completo',
-            specs: [
-              { icon: 'fas fa-bolt', text: 'Dieléctricas' },
-              { icon: 'fas fa-shield-alt', text: 'Seguridad Eléctrica' }
-            ]
-          },
-          {
-            image: 'pro6.png',
-            name: 'Botas Químicas',
-            description: 'Resistente a químicos corrosivos',
-            specs: [
-              { icon: 'fas fa-flask', text: 'Anti-químicos' },
-              { icon: 'fas fa-tint', text: 'Impermeables' }
-            ]
-          }
-        ]
-      },
-      'equipos-rescate': {
+            'equipos-rescate': {
         title: 'Equipos de Rescate',
-        icon: 'fas fa-first-aid',
-        description: 'Equipos especializados para emergencias y rescate',
+        icon: 'fas fa-life-ring',
+        description: 'Equipos para emergencias y rescate',
         products: [
           {
-            image: 'pro7.png',
-            name: 'Kit Primeros Auxilios',
-            description: 'Completo kit de emergencias médicas',
+            image: 'rescate/1.jpg',
+            name: 'Arnés Completo',
+            description: 'Para trabajo en altura',
             specs: [
-              { icon: 'fas fa-medkit', text: 'Primeros Auxilios' },
-              { icon: 'fas fa-clock', text: 'Emergencias' }
+              { icon: 'fas fa-mountain', text: 'Altura' },
+              { icon: 'fas fa-shield', text: 'Seguro' }
             ]
           },
           {
-            image: 'pro8.png',
-            name: 'Camilla Rígida',
-            description: 'Transporte seguro de lesionados',
+            image: 'rescate/2.jpg',
+            name: 'Cuerda de Rescate',
+            description: 'Alta resistencia',
             specs: [
-              { icon: 'fas fa-procedures', text: 'Transporte' },
-              { icon: 'fas fa-shield-alt', text: 'Rígida' }
+              { icon: 'fas fa-rope', text: 'Resistente' },
+              { icon: 'fas fa-weight', text: '300kg' }
             ]
           },
           {
-            image: 'pro1.png',
+            image: 'rescate/3.jpg',
             name: 'Equipo Respiración',
-            description: 'Para rescate en espacios confinados',
+            description: 'Aire autónomo',
             specs: [
-              { icon: 'fas fa-air-freshener', text: 'Aire Limpio' },
-              { icon: 'fas fa-life-ring', text: 'Rescate' }
+              { icon: 'fas fa-lungs', text: 'Respiración' },
+              { icon: 'fas fa-clock', text: '60 min' }
+            ]
+          },
+          {
+            image: 'rescate/4.jpg',
+            name: 'Camilla Rescate',
+            description: 'Transporte de emergencia',
+            specs: [
+              { icon: 'fas fa-procedures', text: 'Camilla' },
+              { icon: 'fas fa-ambulance', text: 'Rescate' }
+            ]
+          },
+          {
+            image: 'rescate/5.jpg',
+            name: 'Kit Primeros Auxilios',
+            description: 'Emergencias médicas',
+            specs: [
+              { icon: 'fas fa-first-aid', text: 'Primeros auxilios' },
+              { icon: 'fas fa-heartbeat', text: 'Médico' }
+            ]
+          },
+          {
+            image: 'rescate/6.jpg',
+            name: 'Linterna Rescate',
+            description: 'Iluminación potente',
+            specs: [
+              { icon: 'fas fa-flashlight', text: 'LED potente' },
+              { icon: 'fas fa-battery-full', text: 'Larga duración' }
+            ]
+          },
+          {
+            image: 'rescate/7.jpg',
+            name: 'Radio Emergencia',
+            description: 'Comunicación crítica',
+            specs: [
+              { icon: 'fas fa-radio', text: 'Radio' },
+              { icon: 'fas fa-broadcast-tower', text: 'Emergencia' }
+            ]
+          },
+          {
+            image: 'rescate/8.jpg',
+            name: 'Manta Térmica',
+            description: 'Conservación calor',
+            specs: [
+              { icon: 'fas fa-thermometer', text: 'Térmica' },
+              { icon: 'fas fa-compress', text: 'Compacta' }
+            ]
+          },
+          {
+            image: 'rescate/9.jpg',
+            name: 'Detector Gases',
+            description: 'Monitoreo ambiental',
+            specs: [
+              { icon: 'fas fa-gas-pump', text: 'Gases' },
+              { icon: 'fas fa-exclamation-triangle', text: 'Alerta' }
+            ]
+          },
+          {
+            image: 'rescate/10.jpg',
+            name: 'Kit Rescate Completo',
+            description: 'Todo en uno',
+            specs: [
+              { icon: 'fas fa-toolbox', text: 'Kit completo' },
+              { icon: 'fas fa-life-ring', text: 'Rescate total' }
             ]
           }
         ]
       },
-      'senalizacion': {
+            'senalizacion': {
         title: 'Señalización',
-        icon: 'fas fa-exclamation-triangle',
-        description: 'Sistemas de señalización y advertencia industrial',
+        icon: 'fas fa-sign',
+        description: 'Señales y equipos de seguridad visual',
         products: [
           {
-            image: 'pro2.jpg',
-            name: 'Señales Reflectivas',
-            description: 'Señalización de alta visibilidad',
+            image: 'señalizacion/1.jpg',
+            name: 'Señales Prohibición',
+            description: 'Indicaciones restrictivas',
             specs: [
-              { icon: 'fas fa-eye', text: 'Alta Visibilidad' },
-              { icon: 'fas fa-sun', text: 'Reflectivas' }
+              { icon: 'fas fa-ban', text: 'Prohibición' },
+              { icon: 'fas fa-eye', text: 'Visible' }
             ]
           },
           {
-            image: 'pro3.jpg',
-            name: 'Conos de Seguridad',
-            description: 'Delimitación de áreas peligrosas',
+            image: 'señalizacion/2.jpg',
+            name: 'Señales Obligación',
+            description: 'Uso obligatorio EPP',
             specs: [
-              { icon: 'fas fa-exclamation-triangle', text: 'Advertencia' },
-              { icon: 'fas fa-road', text: 'Delimitación' }
+              { icon: 'fas fa-exclamation', text: 'Obligatorio' },
+              { icon: 'fas fa-helmet-safety', text: 'EPP' }
             ]
           },
           {
-            image: 'pro4.jpg',
-            name: 'Cintas de Barrera',
-            description: 'Restricción de acceso temporal',
+            image: 'señalizacion/3.jpg',
+            name: 'Señales Advertencia',
+            description: 'Peligros y riesgos',
             specs: [
-              { icon: 'fas fa-ban', text: 'Restricción' },
-              { icon: 'fas fa-tape', text: 'Temporal' }
+              { icon: 'fas fa-triangle-exclamation', text: 'Advertencia' },
+              { icon: 'fas fa-exclamation-triangle', text: 'Peligro' }
+            ]
+          },
+          {
+            image: 'señalizacion/4.jpg',
+            name: 'Señales Emergencia',
+            description: 'Rutas de evacuación',
+            specs: [
+              { icon: 'fas fa-running', text: 'Evacuación' },
+              { icon: 'fas fa-door-open', text: 'Salida' }
+            ]
+          },
+          {
+            image: 'señalizacion/5.jpg',
+            name: 'Conos Tráfico',
+            description: 'Delimitación vial',
+            specs: [
+              { icon: 'fas fa-traffic-light', text: 'Tráfico' },
+              { icon: 'fas fa-road', text: 'Vial' }
+            ]
+          },
+          {
+            image: 'señalizacion/6.jpg',
+            name: 'Cintas Delimitación',
+            description: 'Áreas restringidas',
+            specs: [
+              { icon: 'fas fa-tape', text: 'Delimitación' },
+              { icon: 'fas fa-border-style', text: 'Perímetro' }
+            ]
+          },
+          {
+            image: 'señalizacion/7.jpg',
+            name: 'Señales Luminosas',
+            description: 'Iluminación de seguridad',
+            specs: [
+              { icon: 'fas fa-lightbulb', text: 'Luminosa' },
+              { icon: 'fas fa-power-off', text: 'LED' }
+            ]
+          },
+          {
+            image: 'señalizacion/8.jpg',
+            name: 'Espejos Seguridad',
+            description: 'Visibilidad en esquinas',
+            specs: [
+              { icon: 'fas fa-mirror', text: 'Espejo' },
+              { icon: 'fas fa-eye', text: 'Visibilidad' }
+            ]
+          },
+          {
+            image: 'señalizacion/9.jpg',
+            name: 'Carteles Personalizados',
+            description: 'Mensajes específicos',
+            specs: [
+              { icon: 'fas fa-edit', text: 'Personalizado' },
+              { icon: 'fas fa-comment', text: 'Mensaje' }
+            ]
+          },
+          {
+            image: 'señalizacion/10.jpg',
+            name: 'Kit Señalización',
+            description: 'Conjunto completo',
+            specs: [
+              { icon: 'fas fa-box', text: 'Kit completo' },
+              { icon: 'fas fa-signs-post', text: 'Variado' }
             ]
           }
         ]

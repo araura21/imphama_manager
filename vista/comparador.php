@@ -59,30 +59,15 @@
     <!-- Selector de Comparación -->
     <section class="comparison-selector-section">
       <div class="comparison-selector-content">
-        <h2 class="compare-title">Comparar proveedores</h2>
-        <p class="compare-subtitle">Selecciona hasta 3 proveedores para comparar</p>
+        <h2 class="compare-title">Selecciona los proveedores a comparar</h2>
+        <p class="compare-subtitle">Haz clic en las tarjetas para seleccionar hasta 3 proveedores</p>
         
-        <div class="provider-dropdowns">
-          <div class="provider-dropdown">
-            <select class="provider-select" id="provider1" onchange="updateComparison()">
-              <option value="">Seleccionar proveedor 1</option>
-            </select>
-            <i class="fas fa-chevron-down dropdown-arrow"></i>
-          </div>
-          
-          <div class="provider-dropdown">
-            <select class="provider-select" id="provider2" onchange="updateComparison()">
-              <option value="">Seleccionar proveedor 2</option>
-            </select>
-            <i class="fas fa-chevron-down dropdown-arrow"></i>
-          </div>
-          
-          <div class="provider-dropdown">
-            <select class="provider-select" id="provider3" onchange="updateComparison()">
-              <option value="">Seleccionar proveedor 3</option>
-            </select>
-            <i class="fas fa-chevron-down dropdown-arrow"></i>
-          </div>
+        <div class="providers-grid" id="providersGrid">
+          <!-- Las tarjetas de proveedores se generarán dinámicamente aquí -->
+        </div>
+        
+        <div class="selected-count">
+          <span id="selectedCount">0</span> de 3 proveedores seleccionados
         </div>
       </div>
     </section>    <!-- Comparison Section -->
@@ -186,6 +171,66 @@
               'Tallas': 'XS, S, M, L, XL',
               'Entrega': '24-48 horas'
             }
+          },
+          'Gafas de Seguridad': {
+            price: 320,
+            discount: '12% desc. por 10+ unidades',
+            shipping: 'Envío gratis',
+            features: [
+              { icon: 'fas fa-check', text: 'Lentes policarbonato', available: true },
+              { icon: 'fas fa-check', text: 'Anti-rayadura', available: true },
+              { icon: 'fas fa-check', text: 'Anti-empañamiento', available: true },
+              { icon: 'fas fa-check', text: 'Protección UV', available: true },
+              { icon: 'fas fa-check', text: 'Marcos ajustables', available: true }
+            ],
+            specs: {
+              'Durabilidad': '2-3 años uso regular',
+              'Garantía': '2 años',
+              'Colores': 'Transparente, Gris',
+              'Material': 'Policarbonato',
+              'Tallas': 'Ajustable',
+              'Entrega': '1-2 días'
+            }
+          },
+          'Tapones Auditivos': {
+            price: 180,
+            discount: '25% desc. por 100+ unidades',
+            shipping: 'Envío gratis',
+            features: [
+              { icon: 'fas fa-check', text: '32dB reducción', available: true },
+              { icon: 'fas fa-check', text: 'Espuma suave', available: true },
+              { icon: 'fas fa-check', text: 'Hipoalergénicos', available: true },
+              { icon: 'fas fa-check', text: 'Desechables', available: true },
+              { icon: 'fas fa-check', text: 'Empaque individual', available: true }
+            ],
+            specs: {
+              'Durabilidad': 'Uso único',
+              'Garantía': '1 año',
+              'Colores': 'Naranja, Amarillo',
+              'Material': 'Espuma PU',
+              'Tallas': 'Única',
+              'Entrega': '1-3 días'
+            }
+          },
+          'Botas Punta Acero': {
+            price: 1850,
+            discount: '8% desc. por par',
+            shipping: 'Envío gratis',
+            features: [
+              { icon: 'fas fa-check', text: 'Puntera de acero', available: true },
+              { icon: 'fas fa-check', text: 'Suela antideslizante', available: true },
+              { icon: 'fas fa-check', text: 'Resistente al agua', available: true },
+              { icon: 'fas fa-check', text: 'Plantilla acolchada', available: true },
+              { icon: 'fas fa-check', text: 'Certificación ASTM', available: true }
+            ],
+            specs: {
+              'Durabilidad': '3-4 años uso industrial',
+              'Garantía': '2 años',
+              'Colores': 'Negro, Café',
+              'Material': 'Cuero + Acero',
+              'Tallas': '38-46',
+              'Entrega': '2-4 días'
+            }
           }
         }
       },
@@ -232,7 +277,7 @@
               'Entrega': '3-5 días'
             }
           },
-          'Botas Puntera Acero': {
+          'Botas Punta Acero': {
             price: 1850,
             discount: '12% desc. por par',
             shipping: 'Envío gratis',
@@ -250,6 +295,66 @@
               'Material': 'Cuero + Acero',
               'Tallas': '38-46',
               'Entrega': '2-4 días'
+            }
+          },
+          'Gafas de Seguridad': {
+            price: 280,
+            discount: '15% desc. por 15+ unidades',
+            shipping: 'Envío $40',
+            features: [
+              { icon: 'fas fa-check', text: 'Lentes básicos', available: true },
+              { icon: 'fas fa-times', text: 'Anti-rayadura', available: false },
+              { icon: 'fas fa-check', text: 'Protección básica', available: true },
+              { icon: 'fas fa-check', text: 'Marcos resistentes', available: true },
+              { icon: 'fas fa-times', text: 'Anti-empañamiento', available: false }
+            ],
+            specs: {
+              'Durabilidad': '1-2 años uso regular',
+              'Garantía': '1 año',
+              'Colores': 'Transparente',
+              'Material': 'Plástico',
+              'Tallas': 'Única',
+              'Entrega': '3-5 días'
+            }
+          },
+          'Tapones Auditivos': {
+            price: 150,
+            discount: '20% desc. por 50+ unidades',
+            shipping: 'Envío $30',
+            features: [
+              { icon: 'fas fa-check', text: '28dB reducción', available: true },
+              { icon: 'fas fa-check', text: 'Espuma básica', available: true },
+              { icon: 'fas fa-check', text: 'Económicos', available: true },
+              { icon: 'fas fa-times', text: 'Empaque individual', available: false },
+              { icon: 'fas fa-check', text: 'A granel', available: true }
+            ],
+            specs: {
+              'Durabilidad': 'Uso único',
+              'Garantía': '6 meses',
+              'Colores': 'Naranja',
+              'Material': 'Espuma estándar',
+              'Tallas': 'Única',
+              'Entrega': '3-7 días'
+            }
+          },
+          'Traje Tyvek': {
+            price: 850,
+            discount: '18% desc. por 10+ unidades',
+            shipping: 'Envío $60',
+            features: [
+              { icon: 'fas fa-check', text: 'Material Tyvek', available: true },
+              { icon: 'fas fa-check', text: 'Protección química', available: true },
+              { icon: 'fas fa-check', text: 'Transpirable', available: true },
+              { icon: 'fas fa-check', text: 'Cremallera frontal', available: true },
+              { icon: 'fas fa-times', text: 'Capucha integrada', available: false }
+            ],
+            specs: {
+              'Durabilidad': 'Uso único',
+              'Garantía': '1 año',
+              'Colores': 'Blanco',
+              'Material': 'Tyvek DuPont',
+              'Tallas': 'M, L, XL',
+              'Entrega': '2-5 días'
             }
           }
         }
@@ -316,6 +421,46 @@
               'Tallas': 'M, L, XL',
               'Entrega': '3-5 días'
             }
+          },
+          'Mascarilla Desechable': {
+            price: 120,
+            discount: '40% desc. por 100+ unidades',
+            shipping: 'Envío $15',
+            features: [
+              { icon: 'fas fa-check', text: 'Protección básica', available: true },
+              { icon: 'fas fa-times', text: 'Certificación avanzada', available: false },
+              { icon: 'fas fa-check', text: 'Precio económico', available: true },
+              { icon: 'fas fa-check', text: 'Uso único', available: true },
+              { icon: 'fas fa-times', text: 'Filtración premium', available: false }
+            ],
+            specs: {
+              'Durabilidad': '2-4 horas uso básico',
+              'Garantía': '3 meses',
+              'Colores': 'Blanco',
+              'Material': 'Polipropileno estándar',
+              'Tallas': 'Única',
+              'Entrega': '7-10 días'
+            }
+          },
+          'Orejeras Industriales': {
+            price: 450,
+            discount: '20% desc. por 6+ unidades',
+            shipping: 'Envío $25',
+            features: [
+              { icon: 'fas fa-check', text: '30dB reducción', available: true },
+              { icon: 'fas fa-check', text: 'Almohadillas suaves', available: true },
+              { icon: 'fas fa-times', text: 'Ajuste premium', available: false },
+              { icon: 'fas fa-check', text: 'Banda ajustable', available: true },
+              { icon: 'fas fa-times', text: 'Electrónica', available: false }
+            ],
+            specs: {
+              'Durabilidad': '2-3 años uso regular',
+              'Garantía': '1 año',
+              'Colores': 'Amarillo, Rojo',
+              'Material': 'Plástico ABS',
+              'Tallas': 'Ajustable',
+              'Entrega': '4-6 días'
+            }
           }
         }
       },
@@ -342,7 +487,7 @@
               'Entrega': '1-2 días'
             }
           },
-          'Botas Puntera Acero': {
+          'Botas Punta Acero': {
             price: 2150,
             discount: '8% desc. por par',
             shipping: 'Envío gratis',
@@ -360,6 +505,46 @@
               'Material': 'Cuero premium + Acero',
               'Tallas': '36-48',
               'Entrega': '24-48 horas'
+            }
+          },
+          'Careta Facial': {
+            price: 680,
+            discount: '10% desc. por 5+ unidades',
+            shipping: 'Envío gratis',
+            features: [
+              { icon: 'fas fa-check', text: 'Visor anti-impacto', available: true },
+              { icon: 'fas fa-check', text: 'Anti-empañamiento', available: true },
+              { icon: 'fas fa-check', text: 'Banda ajustable', available: true },
+              { icon: 'fas fa-check', text: 'Protección total', available: true },
+              { icon: 'fas fa-check', text: 'Reemplazos disponibles', available: true }
+            ],
+            specs: {
+              'Durabilidad': '2-3 años uso profesional',
+              'Garantía': '2 años',
+              'Colores': 'Transparente',
+              'Material': 'Policarbonato',
+              'Tallas': 'Ajustable',
+              'Entrega': '1-3 días'
+            }
+          },
+          'Arnés Completo': {
+            price: 1850,
+            discount: '15% desc. por 2+ unidades',
+            shipping: 'Envío gratis',
+            features: [
+              { icon: 'fas fa-check', text: 'Certificación ANSI', available: true },
+              { icon: 'fas fa-check', text: '5 puntos anclaje', available: true },
+              { icon: 'fas fa-check', text: 'Amortiguador incluido', available: true },
+              { icon: 'fas fa-check', text: 'Ajuste universal', available: true },
+              { icon: 'fas fa-check', text: 'Inspección fácil', available: true }
+            ],
+            specs: {
+              'Durabilidad': '5-7 años uso profesional',
+              'Garantía': '3 años',
+              'Colores': 'Negro, Amarillo',
+              'Material': 'Nylon + Acero',
+              'Tallas': 'M, L, XL',
+              'Entrega': '1-2 días'
             }
           }
         }
@@ -639,40 +824,128 @@
     let selectedProviders = [];
     let currentProduct = '';
 
-    // Función para cargar proveedores en los dropdowns
-    function loadProviderDropdowns(productName) {
-      const dropdowns = ['provider1', 'provider2', 'provider3'];
+    // Función para cargar tarjetas de proveedores
+    function loadProviderCards(productName) {
+      const providersGrid = document.getElementById('providersGrid');
+      providersGrid.innerHTML = '';
       
-      dropdowns.forEach(dropdownId => {
-        const dropdown = document.getElementById(dropdownId);
-        dropdown.innerHTML = '<option value="">Seleccionar proveedor</option>';
+      Object.keys(providerDatabase).forEach(providerId => {
+        const provider = providerDatabase[providerId];
+        const hasProduct = provider.products[productName] !== undefined;
         
-        Object.keys(providerDatabase).forEach(providerId => {
-          const provider = providerDatabase[providerId];
-          const hasProduct = provider.products[productName] !== undefined;
+        if (hasProduct) {
+          const product = provider.products[productName];
           
-          if (hasProduct) {
-            const option = document.createElement('option');
-            option.value = providerId;
-            option.textContent = provider.name;
-            dropdown.appendChild(option);
-          }
-        });
+          const providerCard = document.createElement('div');
+          providerCard.className = 'provider-selection-card';
+          providerCard.setAttribute('data-provider', providerId);
+          providerCard.onclick = () => toggleProvider(providerId);
+          
+          providerCard.innerHTML = `
+            <div class="selection-indicator">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="provider-card-header">
+              <h3 class="provider-name">${provider.name}</h3>
+            </div>
+            <div class="provider-preview">
+              <div class="price-preview">
+                <span class="currency">$</span>
+                <span class="amount">${product.price}</span>
+              </div>
+              <div class="features-preview">
+                ${product.features.slice(0, 2).map(feature => `
+                  <div class="feature-preview">
+                    <i class="${feature.icon}"></i>
+                    <span>${feature.text}</span>
+                  </div>
+                `).join('')}
+              </div>
+              <div class="delivery-info">
+                <i class="fas fa-truck"></i>
+                <span>${product.specs['Entrega']}</span>
+              </div>
+            </div>
+          `;
+          
+          providersGrid.appendChild(providerCard);
+        }
       });
+      
+      updateSelectedCount();
+    }
+
+    // Función para alternar selección de proveedor
+    function toggleProvider(providerId) {
+      const card = document.querySelector(`[data-provider="${providerId}"]`);
+      
+      if (selectedProviders.includes(providerId)) {
+        // Deseleccionar
+        selectedProviders = selectedProviders.filter(id => id !== providerId);
+        card.classList.remove('selected');
+      } else {
+        // Seleccionar (máximo 3)
+        if (selectedProviders.length < 3) {
+          selectedProviders.push(providerId);
+          card.classList.add('selected');
+        } else {
+          // Mostrar mensaje si ya hay 3 seleccionados
+          showMessage('Máximo 3 proveedores permitidos. Deselecciona uno para agregar otro.');
+          return;
+        }
+      }
+      
+      updateSelectedCount();
+      updateComparison();
+    }
+
+    // Función para mostrar mensajes temporales
+    function showMessage(message) {
+      // Crear elemento de mensaje
+      const messageDiv = document.createElement('div');
+      messageDiv.className = 'temp-message';
+      messageDiv.textContent = message;
+      messageDiv.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ff6b6b;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 8px;
+        z-index: 1000;
+        font-weight: 500;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      `;
+      
+      document.body.appendChild(messageDiv);
+      
+      // Remover después de 3 segundos
+      setTimeout(() => {
+        if (messageDiv.parentNode) {
+          messageDiv.parentNode.removeChild(messageDiv);
+        }
+      }, 3000);
+    }
+
+    // Función para actualizar contador de seleccionados
+    function updateSelectedCount() {
+      const selectedCountElement = document.getElementById('selectedCount');
+      if (selectedCountElement) {
+        selectedCountElement.textContent = selectedProviders.length;
+        
+        // Actualizar estilo según cantidad seleccionada
+        const parentElement = selectedCountElement.parentElement;
+        parentElement.className = 'selected-count';
+        if (selectedProviders.length === 3) {
+          parentElement.classList.add('max-reached');
+        }
+      }
     }
 
     // Función para actualizar la comparación
     function updateComparison() {
-      selectedProviders = [];
-      
-      // Obtener proveedores seleccionados de los dropdowns
-      ['provider1', 'provider2', 'provider3'].forEach(dropdownId => {
-        const dropdown = document.getElementById(dropdownId);
-        if (dropdown && dropdown.value) {
-          selectedProviders.push(dropdown.value);
-        }
-      });
-
       const comparisonGrid = document.querySelector('.comparison-grid');
       comparisonGrid.innerHTML = '';
 
@@ -681,7 +954,7 @@
           <div class="no-providers-message">
             <i class="fas fa-info-circle"></i>
             <h3>Selecciona proveedores para comparar</h3>
-            <p>Utiliza los menús desplegables de arriba para seleccionar proveedores</p>
+            <p>Haz clic en las tarjetas de arriba para seleccionar proveedores</p>
           </div>
         `;
         return;
@@ -697,6 +970,9 @@
           <div class="provider-header">
             <div class="provider-info">
               <h3 class="provider-name">${provider.name}</h3>
+              <button class="remove-provider" onclick="removeProvider('${providerId}')" title="Quitar de comparación">
+                <i class="fas fa-times"></i>
+              </button>
             </div>
           </div>
 
@@ -705,13 +981,21 @@
               <span class="currency">$</span>
               <span class="amount">${product.price}</span>
             </div>
+            <div class="discount-info">
+              <i class="fas fa-percentage"></i>
+              <span>${product.discount}</span>
+            </div>
+            <div class="shipping-info">
+              <i class="fas fa-truck"></i>
+              <span>${product.shipping}</span>
+            </div>
           </div>
 
           <div class="features-section">
             <h4 class="features-title">Características</h4>
             <ul class="features-list">
               ${product.features.map(feature => `
-                <li class="feature-item">
+                <li class="feature-item ${feature.available ? 'available' : 'unavailable'}">
                   <i class="${feature.icon}"></i>
                   <span>${feature.text}</span>
                 </li>
@@ -747,6 +1031,20 @@
       });
     }
 
+    // Función para remover proveedor de la comparación
+    function removeProvider(providerId) {
+      selectedProviders = selectedProviders.filter(id => id !== providerId);
+      
+      // Actualizar tarjeta de selección
+      const card = document.querySelector(`[data-provider="${providerId}"]`);
+      if (card) {
+        card.classList.remove('selected');
+      }
+      
+      updateSelectedCount();
+      updateComparison();
+    }
+
     // Función para manejar selección de proveedor
     function selectProvider(providerId) {
       const provider = providerDatabase[providerId];
@@ -769,19 +1067,17 @@
 
       // Actualizar información del producto
       document.getElementById('productTitle').textContent = currentProduct;
+      
+      // Usar la ruta de imagen correcta (ya viene con la estructura de carpetas)
       document.getElementById('productImage').src = `assets/img/productos/${productImage}`;
+      
       document.getElementById('productCategory').textContent = productCategory.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase());
 
-      // Cargar proveedores en los dropdowns
-      loadProviderDropdowns(currentProduct);
+      // Cargar tarjetas de proveedores
+      loadProviderCards(currentProduct);
 
-      // Agregar event listeners a los dropdowns
-      ['provider1', 'provider2', 'provider3'].forEach(dropdownId => {
-        const dropdown = document.getElementById(dropdownId);
-        if (dropdown) {
-          dropdown.addEventListener('change', updateComparison);
-        }
-      });
+      // Inicializar comparación vacía
+      updateComparison();
 
       // Animación de entrada
       setTimeout(() => {
