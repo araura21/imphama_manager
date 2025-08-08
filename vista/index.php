@@ -1,7 +1,6 @@
 <?php
 session_start();
-
-// Redirigir a login si no está logueado
+// Verificar si el usuario ha iniciado sesión
 if (!isset($_SESSION['usuario_id'])) {
     header('Location: login.php');
     exit();
@@ -29,9 +28,13 @@ include 'includes/header.php';
                 <p>Gestión de usuarios del sistema</p>
                 <a href="usuarios.php" class="btn">Gestionar</a>
             </div>
+            <div class="module-card">
+                <h3>Aditoría</h3>
+                <p>Gestión de auditoría del sistema</p>
+                <a href="" class="btn">Gestionar</a>
+            </div>
         <?php endif; ?>
-
-        <?php if ($_SESSION['usuario_rol'] == 'Admin' || $_SESSION['usuario_rol'] == 'Bodeguero'): ?>
+        <?php if ( $_SESSION['usuario_rol'] == 'Bodeguero'): ?>
             <div class="module-card">
                 <h3>Productos</h3>
                 <p>Gestión de productos</p>
@@ -39,7 +42,7 @@ include 'includes/header.php';
             </div>
         <?php endif; ?>
 
-        <?php if ($_SESSION['usuario_rol'] == 'Admin' || $_SESSION['usuario_rol'] == 'Logística'): ?>
+        <?php if ( $_SESSION['usuario_rol'] == 'Logística'): ?>
             <div class="module-card">
                 <h3>Proveedores</h3>
                 <p>Gestión de proveedores</p>
@@ -47,7 +50,7 @@ include 'includes/header.php';
             </div>
         <?php endif; ?>
 
-        <?php if ($_SESSION['usuario_rol'] == 'Admin' || $_SESSION['usuario_rol'] == 'Ventas'): ?>
+        <?php if ( $_SESSION['usuario_rol'] == 'Ventas'): ?>
             <div class="module-card">
                 <h3>Clientes</h3>
                 <p>Gestión de clientes</p>

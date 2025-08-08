@@ -1,50 +1,9 @@
 <?php
-session_start();
-require_once 'includes/database.php';
 
-// Si ya está logueado, redirigir al index
-if (isset($_SESSION['usuario_id'])) {
-    header('Location: index.php');
-    exit();
-}
+require_once '../controlador/loginController.php';
 
-$error = '';
-
-if ($_POST) {
-    $usuario = $_POST['usuario'] ?? '';
-    $password = $_POST['password'] ?? '';
-    
-    if (!empty($usuario) && !empty($password)) {
-        try {
-            $db = getDB();
-            
-            // Buscar usuario en la base de datos
-            $sql = "SELECT id, usuario, nombre, email, rol, activo FROM usuarios 
-                    WHERE usuario = :usuario AND password = MD5(:password) AND activo = 1";
-            
-            $result = $db->fetch($sql, [
-                'usuario' => $usuario,
-                'password' => $password
-            ]);
-            
-            if ($result) {
-                $_SESSION['usuario_id'] = $result['id'];
-                $_SESSION['usuario_nombre'] = $result['nombre'];
-                $_SESSION['usuario_rol'] = $result['rol'];
-                $_SESSION['usuario_email'] = $result['email'];
-                
-                header('Location: index.php');
-                exit();
-            } else {
-                $error = 'Usuario o contraseña incorrectos';
-            }
-        } catch (Exception $e) {
-            $error = 'Error de conexión. Intente nuevamente.';
-        }
-    } else {
-        $error = 'Complete todos los campos';
-    }
-}
+$error = isset($_SESSION['login_error']) ? $_SESSION['login_error'] : '';
+unset($_SESSION['login_error']);
 ?>
 
 <!DOCTYPE html>
