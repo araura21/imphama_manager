@@ -1,0 +1,105 @@
+/* Permitir scroll interno en el modal si el contenido es muy grande */
+.modal-content {
+	max-height: 80vh;
+	overflow-y: auto;
+}
+/* Estilos específicos para la gestión de usuarios */
+.modal {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+	background-color: white;
+	margin: 5% auto;
+	padding: 2rem;
+	border-radius: 10px;
+	width: 90%;
+	max-width: 500px;
+	position: relative;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+	position: absolute;
+	top: 1rem;
+	right: 1.5rem;
+}
+
+.close:hover {
+	color: black;
+}
+
+.card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.badge {
+	padding: 0.25rem 0.5rem;
+	border-radius: 4px;
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+
+.badge-admin { background-color: #e74c3c; color: white; }
+.badge-bodeguero { background-color: #3498db; color: white; }
+.badge-ventas { background-color: #27ae60; color: white; }
+.badge-logística { background-color: #f39c12; color: white; }
+.badge-success { background-color: #27ae60; color: white; }
+.badge-danger { background-color: #e74c3c; color: white; }
+
+.roles-info {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5rem;
+}
+
+.role-card {
+	background: #f8f9fa;
+	padding: 1.5rem;
+	border-radius: 8px;
+	border-left: 4px solid #3498db;
+}
+
+.role-card h4 {
+	color: #2c3e50;
+	margin-bottom: 1rem;
+}
+
+.role-card ul {
+	list-style: none;
+	padding: 0;
+}
+
+.role-card li {
+	padding: 0.25rem 0;
+	position: relative;
+	padding-left: 1.5rem;
+}
+
+.role-card li:before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	color: #27ae60;
+	font-weight: bold;
+}
+
+form small {
+	color: #7f8c8d;
+	font-size: 0.8rem;
+	display: block;
+	margin-top: 0.25rem;
+}
+/* Estilos específicos para la gestión de usuarios */
